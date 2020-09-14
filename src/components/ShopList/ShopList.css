@@ -1,0 +1,24 @@
+.shopItem {
+    text-align:center;
+    background-color : rgba(0, 0, 192, 0.685);
+    padding:20px;
+    border-radius:10px;
+    position: fixed;
+    display:block;
+    width: 100% !important;
+    bottom:0;
+    font-size:20px;
+}
+.shopItem a {
+    margin-left : 10px;
+    padding : 5px;
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+}
+.shopItem a:hover {
+    background-color:whitesmoke;
+    color:black;
+    padding:20px;
+    border-radius : 10px;
+}

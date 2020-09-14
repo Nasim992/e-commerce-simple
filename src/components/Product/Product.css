@@ -1,0 +1,40 @@
+.product-section {
+    display: flex;
+    border-bottom:1px solid gray;
+    padding:10px;
+    margin:5px;
+    margin-bottom:10px;
+}
+.image-section {
+    width:30%;
+}
+.product-description {
+    margin-right:10px;
+    padding:10px;
+}
+.product-description h4 {
+    color:blue;
+    font-weight:bold;
+}
+.product-description h5 {
+    color:yellowgreen;
+    font-weight:bold;
+}
+.product-description h6 {
+    color:rgb(73, 73, 4);
+    font-weight:bold;
+}
+.product-description button {
+    background-color:blue;
+    color:white;
+    font-weight:bold;
+    padding:5px;
+    width:200px;
+    border-radius:10px;
+    border:1px solid blue;
+    display:block;
+}
+.product-description button:hover {
+    background-color:rgba(15, 16, 85, 0.329);
+    color:yellow;
+}

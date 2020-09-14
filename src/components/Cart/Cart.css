@@ -1,0 +1,22 @@
+.cart {
+    position : fixed;
+    text-align:center;
+}
+.cart h4 {
+    font-weight: 900;
+    color : blue;
+}
+.cart button {
+    background-color:blue;
+    color:white;
+    font-weight:bold;
+    padding:5px;
+    width:200px;
+    border-radius:10px;
+    border:1px solid blue;
+    display:block;
+}
+.cart button:hover {
+    background-color:rgba(15, 16, 85, 0.329);
+    color:yellow;
+}

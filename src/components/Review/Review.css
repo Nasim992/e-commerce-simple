@@ -10,9 +10,15 @@
 .didntBuy h1 {
     text-align:center;
     font-weight:900;
-    margin-top:100px;
-    background-color:blue;
+    margin-top:250px;;
+    background-color:rgb(73, 104, 209);
     color:white;
-    padding:20px;
+    padding:40px;
     border-radius:10px;
+    cursor : pointer;
+    transition: 0.4s;
+}
+.didntBuy h1:hover {
+    color : black;
+    background-color:blue;
 }

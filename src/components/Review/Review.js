@@ -6,17 +6,21 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 import Cart from '../Cart/Cart';
 import './Review.css';
 import happyImage from '../../images/giphy.gif';
+import { useHistory } from 'react-router-dom';
 
 const Review = () => {
     const [cart,setCart] = useState([]);
 
     const [orderplaced,setOrderPlaced] = useState([]);
 
-    const handlePlaceOrder = ()=> {
-        console.log("Order Placed");
-        setCart([]);
-        setOrderPlaced(true);
-        processOrder();
+    const history = useHistory();
+     
+
+    const handleProceedCheckout = ()=> {
+        // setCart([]);
+        // setOrderPlaced(true);
+        // processOrder();
+        history.push('/shipment');
     }
 
     const handleRemoveProducts = ((key)=> {
@@ -63,7 +67,7 @@ const Review = () => {
              
               {
                   cartLength &&    <Cart cart={cart}>
-                  <button onClick={handlePlaceOrder}>Place Order</button>
+                  <button onClick={handleProceedCheckout}>Proceed CheckOut</button>
                  </Cart>
               }
              

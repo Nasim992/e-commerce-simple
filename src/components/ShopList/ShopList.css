@@ -9,7 +9,7 @@
     bottom:0;
     font-size:20px;
 }
-.shopItem a {
+.shopItem a{
     margin-left : 10px;
     padding : 5px;
     color:white;
@@ -19,6 +19,19 @@
 .shopItem a:hover {
     background-color:whitesmoke;
     color:black;
-    padding:20px;
+    padding : 16px;
     border-radius : 10px;
+}
+button{
+   
+    color:white;
+    background-color: rgba(55, 55, 184, 0.883);
+    border-radius : 10px;
+    border : 1px solid blue;
+    font-weight:bold;
+}
+button:hover {
+    background-color:whitesmoke;
+    color:black;
+    padding : 10px;
 }

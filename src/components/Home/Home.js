@@ -11,6 +11,8 @@ import NotFound from '../NotFound/NotFound';
 import ProductDetail from '../ProductDetail/ProductDetail';
 import Login from '../Login/Login';
 import Shipment from '../Shipment/Shipment';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import ShopList from '../ShopList/ShopList';
 
 export const UserContext = createContext();
 
@@ -25,6 +27,7 @@ const Home = () => {
             <h3>email : {loggedInUser.email}</h3>
             {/* <Shop></Shop> */}
             <Router>
+            <ShopList></ShopList>
                 <Switch>
                     <Route path='/shop'>
                                 <Shop></Shop>
@@ -38,9 +41,9 @@ const Home = () => {
                     <Route path="/login">
                             <Login></Login>
                     </Route>
-                    <Route path="/shipment">
+                    <PrivateRoute path="/shipment">
                            <Shipment></Shipment>
-                    </Route>
+                    </PrivateRoute>
 
                     <Route exact  path="/">
                              <Shop></Shop>
